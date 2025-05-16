@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>501 Not Implemented</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffe0b2, #ffccbc);
+      color: #4e342e;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .error-container {
+      background: rgba(255, 248, 225, 0.8);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 100%;
+      backdrop-filter: blur(4px);
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 20px;
+      color: #ff8a65;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #6d4c41;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #ffab91;
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background: #ff8a65;
+    }
+
+    @media(max-width: 600px) {
+      h1 {
+        font-size: 60px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .error-container {
+        padding: 30px 20px;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      h1 {
+        font-size: 100px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <h1 th:utext="${statusCode}"></h1>
+    <h2 th:utext="${statusReason}"></h2>
+    <!-- <p>Oops! The server doesn't support the functionality required to fulfill this request.</p> -->
+    <a href="/">Go Back Home</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Curriculum Javier</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/global-containers.css">
+    <!-- Link to css spring -->
+    <link rel="stylesheet" href="/css/curriculum/styles.css">
+    <!-- Iconos (Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- nav bar -->
+    <link rel="stylesheet" href="/css/fragments/navigation-bar.css">
+</head>
+
+<body>
+
+    <header th:insert="~{fragments/navigation-bar :: navigation-bar}"></header>
+    <main>
+        <div class="container">
+            <div class="header">
+                <div class="images-and-title">
+                    <img class="image" src="/images/whatsapp-qr.jpg" />
+                    <div class="name">Javier Ruiz Nieto</div>                    
+                    <img class="image-perfil" src="/images/foto.jpeg"/>
+                </div>
+                
+                <div class="contact">
+                    <div><i class="fa-solid fa-envelope fa-icon"></i>ruiznietojavier@email.com</div>
+                    <div><i class="fa-solid fa-phone fa-icon"></i>+34 646 86 63 88</div>
+                    <div><i class="fa-solid fa-location-dot fa-icon"></i>Barcelona, España</div>
+                    <div><a href="https://linkedin.com/in/javier-ruiz-nieto" class="linked-text"><i
+                                class="fa-brands fa-linkedin fa-icon"></i>linkedin.com/in/javier-ruiz-nieto</a></div>
+                    <div><a href="https://github.com/CourtesiLOL" class="linked-text"><i
+                                class="fa-brands fa-github fa-icon"></i>github.com/CourtesiLOL</a></div>
+                </div>
+            </div>
+
+
+            <div class="section-title"><i class="fa-solid fa-user"></i> PERFIL PROFESIONAL</div>
+            <p>Desarrollador Backend con experiencia en Java y Python, especializado en la creación de APIs escalables,
+                bases de datos eficientes y arquitectura de software robusta. Apasionado por la optimización de código y
+                las
+                buenas prácticas de desarrollo.</p>
+
+            <div class="section-title"><i class="fa-solid fa-laptop-code"></i> HABILIDADES TÉCNICAS</div>
+            <div class="skill-grid">
+                <div class="skill-category">
+                    <strong>Lenguajes:</strong><br>
+                    <span class="skill-tag">Java<br></span>
+                    <span class="skill-tag">Python<br></span>
+                    <span class="skill-tag">C# (.Net)<br></span>
+                    <span class="skill-tag">Javascript<br></span>
+                    <span class="skill-tag">SQL<br></span>
+                    <span class="skill-tag">Json<br></span>
+                    <span class="skill-tag">XML</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Librerias/Frameworks:</strong><br>
+                    <span class="skill-tag">Spring Boot<br></span>
+                    <span class="skill-tag">FastAPI<br></span>
+                    <span class="skill-tag">WFP<br></span>
+                    <span class="skill-tag">JavaFX<br></span>
+                    <span class="skill-tag">Hiberante<br></span>
+                    <span class="skill-tag">Thymeleaf</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Bases de Datos:</strong><br>
+                    <span class="skill-tag">MySQL<br></span>
+                    <span class="skill-tag">PostgreSQL<br></span>
+                    <span class="skill-tag">SQLite</span>
+                </div>
+
+                <!-- Añadir mas categorías -->
+            </div>
+
+            <div class="section-title"><i class="fa-solid fa-diagram-project"></i> PROYECTOS DESTACADOS</div>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <div class="highlight">Sistema de Gestión de Usuarios</div>
+                    <div class="tech-stack">Java | Spring Boot | PostgreSQL</div>
+                    <ul>
+                        <li>API REST con autenticación JWT/OAuth2</li>
+                        <li>Base de datos PostgreSQL + ORM Hibernate</li>
+
+                    </ul>
+                </div>
+
+
+                <div class="project-item">
+                    <div class="highlight">To-do App</div>
+                    <div class="tech-stack">Java | JavaFX | SQLite</div>
+                    <ul>
+                        <li>Aplicacione de escritorio con JavaFX</li>
+                        <li>Multiplataforma Windows | Mac | Linux</li>
+                        <li>Persitencia local usando SQLite</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Repetir para otros proyectos -->
+
+            <!-- Inicio Experiencia laboral -->
+
+            <div class="section-title"><i class="fa-solid fa-briefcase"></i> EXPERIENCIA</div>
+            <div class="experience-item">
+                <strong>Desarrollador Software</strong><br>
+                <em>IRIS Technology Solutions | 2023 - 2024</em>
+                <ul>
+                    <li>Desarrollo de aplicaciones de escritorio Windows en c# y wpf</li>
+                    <li>Creacion de bases de datos Postgresql</li>
+                    <li>Creacion y optimización de consultas SQL</li>
+                    <li>Creacion de ApiREST para el procesado de datos con Python(FastApi)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <strong>Técnico informático</strong><br>
+                <em>ins ribera Baixa II (sede central - Institut les salines) | 2021 - 2022</em>
+                <ul>
+                    <li>instalacion de SO</li>
+                    <li>instalacion de aplicaciones y configuración de redes.</li>
+                    <li>Montaje y mantenimiento de hardware tanto sobre mesa como portátiles.</li>
+                    <li>Ofimática</li>
+                    <li>Configuracion y mantenimiento de impresoras</li>
+                </ul>
+            </div>
+
+            <!-- Final Experiencia laboral -->
+
+            <div class="section-title"><i class="fa-solid fa-graduation-cap"></i> EDUCACIÓN</div>
+
+            <div class="education-item">
+                <strong>Ingeniería en Software</strong><br>
+                IES El Calamot | 2022 - 2024<br>
+                Técnico Superior en Desarrollo de Aplicaciones Multiplataforma
+            </div>
+
+            <div class="education-item">
+                <strong>Ciclo Formativo Grado Medio</strong><br>
+                IES El Calamot | 2020 - 2022<br>
+                Técnico en Sistemas Microinformáticos y Redes
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

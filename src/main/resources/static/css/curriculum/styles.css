@@ -1,0 +1,153 @@
+.container {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 30px;
+  text-align: left;
+}
+
+.header {
+  border-bottom: 3px solid #2E5A88;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+.name {
+  font-size: 28px;
+  color: #2E5A88;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.section-title {
+  color: #2E5A88;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 25px 0 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #EEE;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.skill-category {
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  text-align: left;
+}
+
+.project-item {
+  margin: 20px 0;
+  padding-left: 15px;
+  border-left: 3px solid #4CAF50;
+}
+
+.highlight {
+  color: #2E5A88;
+  font-weight: 500;
+}
+
+.metric {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.experience-item {
+  margin: 20px 0;
+  padding: 15px;
+  background: #F8F9FA;
+  border-radius: 5px;
+}
+
+.fa-icon {
+  color: #4CAF50;
+  margin-right: 8px;
+}
+
+.education-item {
+  padding-bottom: 1.5vh;
+}
+
+.linked-text{
+  text-decoration: none;
+  color: unset;
+}
+
+.images-and-title {
+  display: flex;
+  flex-direction: row;
+  /* falta arreglar que las imagener se pongan en cada esquina*/
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente */
+  
+}
+
+.image-perfil{
+  max-width: 4dvw;
+  max-height: 4dvh;
+  object-fit: cover; /* Para que las imágenes no se deformen */
+  border-radius: 50%; /* Si son fotos tipo perfil */
+}
+
+.image {
+  max-width: 4dvw;
+  max-height: 4dvh;
+  object-fit: cover; /* Para que las imágenes no se deformen */
+}
+
+@media (max-width: 500px) {
+  
+  header {
+    margin: 1vh 8vw;
+  }
+  body {
+    margin: 1vh 5vw;
+  }
+
+  main .container {
+    padding: 20px;
+  }
+
+  main .container .project-grid {
+    text-align: left;
+    scale: 95%;
+  }
+
+  main .container .skill-grid, main .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  main .container .skill-grid .skill-category {
+    margin-bottom: 2vh;
+    text-align: left;
+  }
+
+  main .container .skill-grid .skill-category strong {
+    font-size: large;
+  }
+
+  main .container .skill-grid .skill-category > .skill-tag {
+    margin-bottom: 12vh;
+  }
+
+}

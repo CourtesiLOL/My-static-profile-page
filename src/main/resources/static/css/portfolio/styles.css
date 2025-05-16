@@ -1,0 +1,58 @@
+section {
+    padding-bottom: 5vh;
+}
+
+main {
+    font-size: 1em;
+}
+
+.project {
+    max-width: 55%;
+}
+
+.contact {
+    margin-bottom: 3vh;
+}
+
+.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.filosofi-section {
+    margin-top: 4vh;
+}
+
+
+
+@media (max-width: 900px) {
+
+    main {
+        font-size: .95em;
+    }
+
+    main h2 {
+        margin-bottom: 3vh;
+        text-align: center;
+    }
+    
+    .project {
+        max-width: 90%;
+        margin-bottom: 4vh;
+    }
+    .icon-panel {
+        text-align: center;
+    }
+
+    .filosofi-section {
+        margin-top: 4vh;
+        margin-bottom: 1vh;
+    }
+
+    .contact {
+        text-align: center;  
+    }
+
+
+
+}
